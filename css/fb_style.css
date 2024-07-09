@@ -3,7 +3,7 @@
   margin-bottom: 1.5rem;
 }
 
-label {
+.form-group label {
   position: absolute;
   left: 1rem;
   top: 30%;
@@ -24,8 +24,7 @@ label {
   padding: 16px;
   border: 1px solid #ccc;
   border-radius: 12px;
-  font-size: 16px;
-  font-family: "Optimistic Text Medium";
+  font-size: 13px;
   /* Added padding for the icon */
 }
 
@@ -34,14 +33,6 @@ label {
   top: 0;
   font-size: 12px;
   color: #333;
-}
-
-#igform input {
-  font-weight: normal;
-  background-color: #fff;
-  color: #1c1e21;
-  padding-block: 1px;
-  padding-inline: 2px;
 }
 
 #fbbody,
