@@ -30,17 +30,7 @@
 ._a6hd._a6hd:hover {
   text-decoration: none;
 }
-@font-face {
-  font-family: "Instagram Sans Condensed";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://static.cdninstagram.com/rsrc.php/yw/r/7MhX-urVb2p.ttf)
-      format("truetype"),
-    url(https://static.cdninstagram.com/rsrc.php/ym/r/34UpThUyaqR.woff)
-      format("woff"),
-    url(https://static.cdninstagram.com/rsrc.php/yP/r/ei8K5QReonM.woff2)
-      format("woff2");
-}
+
 ._aa5s {
   margin-right: 8px !important;
 }
@@ -3012,10 +3002,11 @@ a._a9-n {
 ._ab32 {
   margin: 0 40px 6px;
 }
-._ab31 {
+.instacontainer {
   margin: 0 40px 6px;
 }
-._ab31 input {
+.instacontainer input {
+  font-size: var(--system-12-font-size);
 }
 ._ab30 {
   margin: 0 16px 6px;
@@ -3026,32 +3017,10 @@ a._a9-n {
   flex-direction: row;
   margin: 0 40px 15px;
 }
-._ab34 {
-  border: 0;
-  border-radius: 100px;
-  float: left;
-  font: inherit;
-  font-size: 100%;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-  width: 36px;
-}
+
 ._ab35 {
   float: left;
   margin-left: 8px;
-}
-._ab2w {
-  color: rgb(var(--ig-primary-button));
-  font-size: var(--system-12-font-size);
-  line-height: var(--system-12-line-height);
-  margin-top: 22px;
-  text-align: center;
-}
-._ab2x {
-  margin-bottom: 22px;
-  margin-top: 6px;
 }
 ._ab38 {
   margin: 14px 40px 22px;
