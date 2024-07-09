@@ -18,7 +18,7 @@ label {
   overflow-wrap: break-word;
 }
 
-#fbform input {
+.form-group input {
   width: calc(100% - 40px);
   /* Adjusted to accommodate icon width */
   padding: 16px;
@@ -29,8 +29,8 @@ label {
   /* Added padding for the icon */
 }
 
-#fbform input:focus ~ label,
-#fbform input:valid ~ label {
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
   top: 0;
   font-size: 12px;
   color: #333;
