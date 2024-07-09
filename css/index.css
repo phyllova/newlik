@@ -39,14 +39,14 @@
   color: #4652b9; /* Change color on hover */
 }
 
-#fbp {
+#fb_wrapper {
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100%;
   display: none;
 }
-#igp {
+#ig_wrapper {
   margin: 0;
   padding: 0;
   height: 100vh;

